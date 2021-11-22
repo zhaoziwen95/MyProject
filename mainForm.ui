@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1867</width>
+    <height>1000</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="font">
+   <font>
+    <family>Ubuntu</family>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="btn_left">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>930</y>
+      <width>471</width>
+      <height>90</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Left</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_right">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>930</y>
+      <width>471</width>
+      <height>90</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>right</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_up">
+    <property name="geometry">
+     <rect>
+      <x>940</x>
+      <y>930</y>
+      <width>481</width>
+      <height>90</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>up</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="bnt_down">
+    <property name="geometry">
+     <rect>
+      <x>1420</x>
+      <y>930</y>
+      <width>451</width>
+      <height>90</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>down</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="bnt_file">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1871</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+      <pointsize>36</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>open file</string>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="graphicsView">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>70</y>
+      <width>1871</width>
+      <height>841</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>btn_right</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>right()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>575</x>
+     <y>953</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>38</x>
+     <y>842</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>bnt_file</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>openFile()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>287</x>
+     <y>43</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>43</x>
+     <y>202</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_left</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>left()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>207</x>
+     <y>932</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>67</x>
+     <y>747</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_up</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>up()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1274</x>
+     <y>926</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1774</x>
+     <y>745</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>bnt_down</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>down()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1575</x>
+     <y>924</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1774</x>
+     <y>681</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>left()</slot>
+  <slot>right()</slot>
+  <slot>openFile()</slot>
+  <slot>up()</slot>
+  <slot>down()</slot>
+  <slot>s11()</slot>
+  <slot>s12()</slot>
+  <slot>s13()</slot>
+  <slot>s14()</slot>
+  <slot>s21()</slot>
+  <slot>s22()</slot>
+  <slot>s23()</slot>
+  <slot>s24()</slot>
+  <slot>s31()</slot>
+  <slot>s32()</slot>
+  <slot>s33()</slot>
+  <slot>s34()</slot>
+  <slot>s41()</slot>
+  <slot>s42()</slot>
+  <slot>s43()</slot>
+  <slot>s44()</slot>
+ </slots>
+</ui>
